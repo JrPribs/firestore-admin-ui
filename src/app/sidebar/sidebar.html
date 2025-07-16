@@ -1,0 +1,10 @@
+<div class="sidebar-container">
+  <div class="project-list">
+    @for (project of projects(); track project.id) {
+      <div [class.active]="project.id === activeProjectId()" 
+           (click)="setActiveProject(project)">
+        {{ project.name }}
+      </div>
+    }
+  </div>
+</div>

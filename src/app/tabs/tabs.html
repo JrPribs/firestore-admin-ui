@@ -1,0 +1,9 @@
+<div class="tabs-container">
+  @for (tab of tabs(); track tab.id) {
+    <div [class.active]="tab.id === activeTabId()" 
+         (click)="setActiveTab(tab)">
+      {{ tab.title }}
+      <button (click)="closeTab(tab.id)">x</button>
+    </div>
+  }
+</div>
