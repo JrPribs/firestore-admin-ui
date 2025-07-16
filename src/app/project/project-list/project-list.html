@@ -1,0 +1,20 @@
+<div class="project-list-container">
+  <h2>Project List</h2>
+  @if (projects().length > 0) {
+    <ul>
+      @for (project of projects(); track project.id) {
+        <li>
+          {{ project.name }} 
+          @if (project.connected) {
+            (Connected)
+          } @else {
+            (Disconnected)
+          }
+          - Last Used: {{ project.lastUsed | date }}
+        </li>
+      }
+    </ul>
+  } @else {
+    <p>No projects found. Add a new project to get started.</p>
+  }
+</div>

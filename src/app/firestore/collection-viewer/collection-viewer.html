@@ -1,0 +1,12 @@
+<div class="collection-viewer-container">
+  <h2>Collection: {{ collectionName() }}</h2>
+  @if (documents().length > 0) {
+    <ul>
+      @for (doc of documents(); track doc.id) {
+        <li>{{ doc.id }}: {{ doc.name }} ({{ doc.email }})</li>
+      }
+    </ul>
+  } @else {
+    <p>No documents in this collection.</p>
+  }
+</div>

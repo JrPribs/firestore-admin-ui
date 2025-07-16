@@ -1,0 +1,15 @@
+<div class="settings-panel-container">
+  <h2>Settings Panel</h2>
+
+  <h3>Application Settings:</h3>
+  <ul>
+    <li>Theme: {{ appSettings().theme }}</li>
+    <li>Default Query Limit: {{ appSettings().defaultLimit }}</li>
+  </ul>
+
+  <h3>Project Settings:</h3>
+  <ul>
+    <li>Project ID: {{ projectSettings().projectId }}</li>
+    <li>Region: {{ projectSettings().region }}</li>
+  </ul>
+</div>

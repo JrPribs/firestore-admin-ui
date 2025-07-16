@@ -1,0 +1,12 @@
+.settings-panel-container {
+  padding: 16px;
+}
+
+.settings-panel-container ul {
+  list-style: none;
+  padding: 0;
+}
+
+.settings-panel-container li {
+  padding: 8px 0;
+}

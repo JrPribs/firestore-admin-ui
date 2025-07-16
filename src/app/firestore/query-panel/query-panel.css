@@ -1,0 +1,19 @@
+.query-panel-container {
+  padding: 16px;
+}
+
+.query-controls {
+  margin-bottom: 16px;
+}
+
+.query-controls label {
+  display: block;
+  margin-bottom: 4px;
+}
+
+.query-controls input {
+  width: 100%;
+  padding: 8px;
+  box-sizing: border-box;
+  margin-bottom: 8px;
+}

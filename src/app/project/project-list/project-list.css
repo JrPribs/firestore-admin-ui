@@ -1,0 +1,13 @@
+.project-list-container {
+  padding: 16px;
+}
+
+.project-list-container ul {
+  list-style: none;
+  padding: 0;
+}
+
+.project-list-container li {
+  padding: 8px 0;
+  border-bottom: 1px solid #eee;
+}

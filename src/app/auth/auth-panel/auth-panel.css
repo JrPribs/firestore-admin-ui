@@ -1,0 +1,13 @@
+.auth-panel-container {
+  padding: 16px;
+}
+
+.auth-panel-container ul {
+  list-style: none;
+  padding: 0;
+}
+
+.auth-panel-container li {
+  padding: 8px 0;
+  border-bottom: 1px solid #eee;
+}

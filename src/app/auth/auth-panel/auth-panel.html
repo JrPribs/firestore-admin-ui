@@ -1,0 +1,13 @@
+<div class="auth-panel-container">
+  <h2>Authentication Panel</h2>
+  <h3>Users:</h3>
+  @if (users().length > 0) {
+    <ul>
+      @for (user of users(); track user.uid) {
+        <li>{{ user.displayName }} ({{ user.email }})</li>
+      }
+    </ul>
+  } @else {
+    <p>No users found.</p>
+  }
+</div>

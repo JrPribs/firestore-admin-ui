@@ -1,0 +1,23 @@
+<div class="query-panel-container">
+  <h2>Query Panel</h2>
+  <div class="query-controls">
+    <label for="collectionPath">Collection Path:</label>
+    <input id="collectionPath" type="text" [(ngModel)]="collectionPath" name="collectionPath">
+
+    <label for="queryLimit">Limit:</label>
+    <input id="queryLimit" type="number" [(ngModel)]="queryLimit" name="queryLimit">
+
+    <button (click)="runQuery()">Run Query</button>
+  </div>
+
+  <h3>Results:</h3>
+  @if (results().length > 0) {
+    <ul>
+      @for (result of results(); track result.id) {
+        <li>{{ result | json }}</li>
+      }
+    </ul>
+  } @else {
+    <p>No results yet. Run a query.</p>
+  }
+</div>

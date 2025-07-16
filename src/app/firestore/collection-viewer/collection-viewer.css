@@ -1,0 +1,13 @@
+.collection-viewer-container {
+  padding: 16px;
+}
+
+.collection-viewer-container ul {
+  list-style: none;
+  padding: 0;
+}
+
+.collection-viewer-container li {
+  padding: 8px 0;
+  border-bottom: 1px solid #eee;
+}
